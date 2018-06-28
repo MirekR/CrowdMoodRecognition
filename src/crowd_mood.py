@@ -8,8 +8,9 @@ import numpy as np
 from utils.inference import load_image
 import matplotlib.pyplot as plt
 
-
-pipe_path = "/Users/mirekrousal/workspace/face_classification/term_sig/end"
+dir_path = os.path.dirname(os.path.realpath(__file__))
+pipe_path = dir_path + "/../term_sig/end"
+print(dir_path)
 if not os.path.exists(pipe_path):
     os.mkfifo(pipe_path)
 
