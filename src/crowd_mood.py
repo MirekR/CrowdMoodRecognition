@@ -27,7 +27,7 @@ with os.fdopen(pipe_fd) as pipe:
 		print("==========================================")
 		bgr_image = video_capture.read()[1]
 		# bgr_image = load_image('/Users/mirekrousal/workspace/CrowMoodRecognition/pics/test.jpg', grayscale=False)
-		results = image_emotion_gender_demo.generateResults(bgr_image)
+		results = image_emotion_gender_demo.generateResults(bgr_image, i)
 		print(results)
 
 		if results:

@@ -13,7 +13,7 @@ from utils.inference import load_detection_model
 from utils.inference import load_image
 from utils.preprocessor import preprocess_input
 
-def generateResults(rgb_image):
+def generateResults(rgb_image, runNumber):
 
     # parameters for loading data and images
     #image_path = path
@@ -94,7 +94,7 @@ def generateResults(rgb_image):
         draw_text(face_coordinates, rgb_image, emotion_text, color, 0, -50, 1, 2)
 
     bgr_image = cv2.cvtColor(rgb_image, cv2.COLOR_RGB2BGR)
-    cv2.imwrite('../images/predicted_test_image.png', bgr_image)
+    cv2.imwrite('../images/predicted_test_image' + str(runNumber) + '.png' , bgr_image)
     
     return result
 
