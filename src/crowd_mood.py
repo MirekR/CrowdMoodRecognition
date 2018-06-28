@@ -50,7 +50,7 @@ with os.fdopen(pipe_fd) as pipe:
 		time.sleep(.5)
 		
 
-print("We have run about this amount of samples" + str(i))
+print("We have attempted this many samples " + str(i))
 ind = np.arange(i)    # the x locations for the groups
 width = 0.35       # the width of the bars: can also be len(x) sequence
 
