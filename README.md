@@ -1,3 +1,6 @@
+Original repository is from these guys, many thanks to them: 
+https://github.com/oarriaga/face_classification
+
 # Face classification and detection from the [B-IT-BOTS robotics team](https://mas-group.inf.h-brs.de/?page_id=622).
 Real-time face detection and emotion/gender classification using fer2013/IMDB datasets with a keras CNN model and openCV.
 * IMDB gender classification test accuracy: 96%.
