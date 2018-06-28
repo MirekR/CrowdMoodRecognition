@@ -54,19 +54,19 @@ print("We have run about this amount of samples" + str(i))
 ind = np.arange(i)    # the x locations for the groups
 width = 0.35       # the width of the bars: can also be len(x) sequence
 
-p0=plt.bar(ind, total_results[0], width, color='#00FFFF')
+p0=plt.bar(ind, total_results[0], width, color='#00FFFF') #Angry
 bottom_total=total_results[0];
-p1=plt.bar(ind, total_results[1], width,bottom=bottom_total, color='#d62728')
+p1=plt.bar(ind, total_results[1], width,bottom=bottom_total, color='#f4330a') #Disgust
 bottom_total=[x + y for x, y in zip(bottom_total, total_results[1])]
-p2=plt.bar(ind, total_results[2], width,bottom=bottom_total, color='#FF0000')
+p2=plt.bar(ind, total_results[2], width,bottom=bottom_total, color='#c037d8') #Fear
 bottom_total=[x + y for x, y in zip(bottom_total, total_results[2])]
-p3=plt.bar(ind, total_results[3], width,bottom=bottom_total, color='#800000')
+p3=plt.bar(ind, total_results[3], width,bottom=bottom_total, color='#54E730') #Happy
 bottom_total=[x + y for x, y in zip(bottom_total, total_results[3])]
-p4=plt.bar(ind, total_results[4], width,bottom=bottom_total, color='#FFFF00')
+p4=plt.bar(ind, total_results[4], width,bottom=bottom_total, color='#405cee') #Sad
 bottom_total=[x + y for x, y in zip(bottom_total, total_results[4])]
-p5=plt.bar(ind, total_results[5], width,bottom=bottom_total, color='#808000')
+p5=plt.bar(ind, total_results[5], width,bottom=bottom_total, color='#ea84db') #Surprise
 bottom_total=[x + y for x, y in zip(bottom_total, total_results[5])]
-p6=plt.bar(ind, total_results[6], width,bottom=bottom_total, color='#000080')
+p6=plt.bar(ind, total_results[6], width,bottom=bottom_total, color='#89897f') #Neutral
 
 
 plt.ylabel('Count')
