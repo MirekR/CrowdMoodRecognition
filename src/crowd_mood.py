@@ -50,7 +50,7 @@ with os.fdopen(pipe_fd) as pipe:
 		time.sleep(.5)
 		
 
-print("We have run about this amount of samples" + str(i))
+print("We have attempted this many samples " + str(i))
 ind = np.arange(i)    # the x locations for the groups
 width = 0.35       # the width of the bars: can also be len(x) sequence
 
@@ -70,7 +70,8 @@ p6=plt.bar(ind, total_results[6], width,bottom=bottom_total, color='#89897f') #N
 
 
 plt.ylabel('Count')
-plt.title('Time stamp')
+plt.xlabel('Sample Number')
+plt.title('Emotional Spread Over Time')
 plt.xticks(ind)
 plt.yticks(np.arange(0, maxScale, 1))
 plt.legend((p0[0],p1[0], p2[0],p3[0],p4[0],p5[0],p6[0]), ('Angry', 'Disgust','Fear','Happy','Sad','Surprise','Neutral'))
