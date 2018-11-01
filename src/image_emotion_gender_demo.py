@@ -95,6 +95,7 @@ def generateResults(rgb_image, runNumber):
 
     bgr_image = cv2.cvtColor(rgb_image, cv2.COLOR_RGB2BGR)
     cv2.imwrite('../images/predicted_test_image' + str(runNumber) + '.png' , bgr_image)
+    cv2.imwrite('../images/source_test_image' + str(runNumber) + '.png' , rgb_image)
     
     return result
 
